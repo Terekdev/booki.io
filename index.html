@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablette.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts 'Raleway'-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" type="text/css">
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/d6cfeb2621.js" crossorigin="anonymous"></script>
+    <title>Booki</title>
+</head>
+<!-- En tête -->
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="ImagesBooki/logo/Booki.png" alt="logo Booki">
+        </div>
+        <nav>
+            <div class="ancres">
+                <ul id="nav_mobiles">
+                    <li><a href="#hebergement" id="heberge_mobile">Hébergement</a></li>
+                    <li><a href="#activites" id="activites_mobile">Activités</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="recherchebloc">
+            <!-- Titre/sous-titre -->
+            <div class="titre">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p id="sous-titre">En plein centre-ville ou en pleine nature</p>
+                <!-- Barre de recherche -->
+                <div class="saisie">
+                    <form method="post" action="#">
+                        <i class="fas fa-location-dot" id="map"></i><!--icone map-->
+                        <input type="search" name="recherche" placeholder="Marseille, France" id="recherche">
+                        <button type="button" id="bouton">
+                            <span class="secret"></span><i class="fas fa-search" id="search"></i>
+                            <span class="text_recherche">Rechercher</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="section_filtres">
+                <p id="titre_filtres">Filtres</p>
+                <!-- Listes Filtres/Icones -->
+                <div class="liste_filtres">
+                    <div class="filtres_e"><a href="#"><i class="icon fas fa-money-bill-wave"></i>Economique</a></div>
+                    <div class="filtres_f"><a href="#"><i class="icon fas fa-child-reaching"></i>Familial</a></div>
+                    <div class="filtres_r"><a href="#"><i class="icon fas fa-heart"></i>Romantique</a></div>
+                    <div class="filtres_a"><a href="#"><i class="icon fas fa-fire"></i>Nos pépites</a></div>
+                </div>
+            </div>
+            <!-- Info -->
+            <p id="info">
+                <small><i class="fas fa-info" id="reponse"></i></small>
+                <span class="titre-info">Plus de 500 logements sont disponibles dans cette ville</span>
+            </p>
+        </section>
+        <!-- Hébergement/Populaire -->
+        <section class="hebepopu">
+            <section class="hebe_main hebepopu_background" id="hebergement">
+                
+                <header class="hebe_main_header">
+                    <h2 class="hebe_main_header_title hebepopu_title">Hébergements à Marseille</h2>
+                </header>
+                
+                <div class="hebe_main_cards">
+                    <article class="hebe_main_card hebepopu_card">
+                        <a href="#">
+                            <div class="hebe_main_card_fig hebepopu_card_fig">
+                                <img class="hebe_main_card_fig_img hebepopu_card_fig_img" src="ImagesBooki/hebergements/Photo/port.jpg" alt="Chambre lumineuse avec deux lits simples." />
+                                <div class="hebe_main_card_fig_caption hebepopu_card_fig_caption">
+                                    <div class="hebe_main_card_fig_caption_desc">
+                                        <h3 class="hebe_main_card_fig_caption_title hebepopu_card_fig_caption_title">Hôtel du port</h3>
+                                        <p class="hebe_main_card_from hebepopu_card_from">Nuit à partir de  <span class="hebe_main_card_from_price">52€</span></p>
+                                    </div>
+                                    <div class="hebepopu_card_stars">
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_off"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="hebe_main_card hebepopu_card">
+                        <a href="#">
+                            <div class="hebe_main_card_fig hebepopu_card_fig">
+                                <img class="hebe_main_card_fig_img hebepopu_card_fig_img" src="ImagesBooki/hebergements/Photo/amina.jpg" alt="Chambre lumineuse avec deux lits simples." />
+                                <div class="hebe_main_card_fig_caption hebepopu_card_fig_caption">
+                                    <div class="hebe_main_card_fig_caption_desc">
+                                        <h3 class="hebe_main_card_fig_caption_title hebepopu_card_fig_caption_title">Hôtel chez Amina</h3>
+                                        <p class="hebe_main_card_from hebepopu_card_from">Nuit à partir de  <span class="hebe_main_card_from_price">96€</span></p>
+                                    </div>
+                                    <div class="hebepopu_card_stars">
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_off"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="hebe_main_card hebepopu_card">
+                        <a href="#">
+                            <div class="hebe_main_card_fig hebepopu_card_fig">
+                                <img class="hebe_main_card_fig_img hebepopu_card_fig_img" src="ImagesBooki/hebergements/Photo/mouettes.jpg" alt="Chambre confort avec lit double." />
+                                <div class="hebe_main_card_fig_caption hebepopu_card_fig_caption">
+                                    <div class="hebe_main_card_fig_caption_desc">
+                                        <h3 class="hebe_main_card_fig_caption_title hebepopu_card_fig_caption_title">Hôtel - Les mouettes</h3>
+                                        <p class="hebe_main_card_from hebepopu_card_from">Nuit à partir de  <span class="hebe_main_card_from_price">76€</span></p>
+                                    </div>
+                                    <div class="hebepopu_card_stars">
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_off"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="hebe_main_card hebepopu_card">
+                        <a href="#">
+                            <div class="hebe_main_card_fig hebepopu_card_fig">
+                                <img class="hebe_main_card_fig_img hebepopu_card_fig_img" src="ImagesBooki/hebergements/Photo/mer.jpg" alt="Chambre confort avec lit double." />
+                                <div class="hebe_main_card_fig_caption hebepopu_card_fig_caption">
+                                    <div class="hebe_main_card_fig_caption_desc">
+                                        <h3 class="hebe_main_card_fig_caption_title hebepopu_card_fig_caption_title">Hôtel de la mer</h3>
+                                        <p class="hebe_main_card_from hebepopu_card_from">Nuit à partir de  <span class="hebe_main_card_from_price">46€</span></p>
+                                    </div>
+                                    <div class="hebepopu_card_stars">
+                                        
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_off"></i>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="hebe_main_card hebepopu_card">
+                        <a href="#">
+                            <div class="hebe_main_card_fig hebepopu_card_fig">
+                                <img class="hebe_main_card_fig_img hebepopu_card_fig_img" src="ImagesBooki/hebergements/Photo/canebiere.jpg" alt="Chambre lumineuse avec lit superposé donant sur le centre ville." />
+                                <div class="hebe_main_card_fig_caption hebepopu_card_fig_caption">
+                                    <div class="hebe_main_card_fig_caption_desc">
+                                        <h3 class="hebe_main_card_fig_caption_title hebepopu_card_fig_caption_title">Auberge La Canebiere</h3>
+                                        <p class="hebe_main_card_from hebepopu_card_from">Nuit à partir de  <span class="hebe_main_card_from_price">25€</span></p>
+                                    </div>
+                                    <div class="hebepopu_card_stars">
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_off"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="hebe_main_card hebepopu_card">
+                        <a href="#">
+                            <div class="hebe_main_card_fig hebepopu_card_fig">
+                                <img class="hebe_main_card_fig_img hebepopu_card_fig_img" src="ImagesBooki/hebergements/Photo/panier.jpg" alt="Chambre rustique avec lits superposés." />
+                                <div class="hebe_main_card_fig_caption">
+                                    <div class="hebe_main_card_fig_caption_desc hebepopu_card_fig_caption">
+                                        <h3 class="hebe_main_card_fig_caption_title hebepopu_card_fig_caption_title">Hôtel Le Panier</h3>
+                                        <p class="hebe_main_card_from hebepopu_card_from">Nuit à partir de  <span class="hebe_main_card_from_price">23€</span></p>
+                                    </div>
+                                    <div class="hebepopu_card_stars">
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_off"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+
+                <div class="hebe_main_card_footer">
+                    <span class="hebe_main_card_footer_link">Afficher plus</span>
+                </div>
+            </section>
+            <!-- Les plus populaire -->
+            <aside class="popular_main hebepopu_background">
+                <header class="popular_main_header">
+                    <h2 class="popular_main_header_title hebepopu_title">Les plus populaires</h2>
+                    <i class="fa-solid fa-chart-line popular_main_header_icon"></i>
+                </header>
+
+                <div class="popular_main_cards">
+                    <article class="popular_main_card hebepopu_card">
+                        <a href="#">
+                            <div class="popular_main_card_fig hebepopu_card_fig">
+                                <img class="popular_main_card_fig_img hebepopu_card_fig_img" src="ImagesBooki/hebergements/Photo/soleil.jpg" alt="Chambre lumineuse style bohème." />
+                                <div class="popular_main_card_fig_caption hebepopu_card_fig_caption">
+                                    <div class="popular_main_card_fig_caption_desc">
+                                        <h3 class="popular_main_card_fig_caption_title hebepopu_card_fig_caption_title">Auberge La Canebière</h3>
+                                        <p class="popular_main_card_from hebepopu_card_from">Nuit à partir de  <span class="popular_main_card_from_price">25€</span></p>
+                                    </div>
+                                    <div class="hebepopu_card_stars">
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_off"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular_main_card hebepopu_card">
+                        <a href="#">
+                            <div class="popular_main_card_fig hebepopu_card_fig">
+                                <img class="popular_main_card_fig_img hebepopu_card_fig_img" src="ImagesBooki/hebergements/Photo/eau.jpg" alt="Chambre spacieuse, moderne, style scandinave." />
+                                <div class="popular_main_card_fig_caption hebepopu_card_fig_caption">
+                                    <div class="popular_main_card_fig_caption_desc">
+                                        <h3 class="popular_main_card_fig_caption_title hebepopu_card_fig_caption_title">Chambres d'hôtes Au coeur de l'eau</h3>
+                                        <p class="popular_main_card_from hebepopu_card_from">Nuit à partir de  <span class="popular_main_card_from_price">71€</span></p>
+                                    </div>
+                                    <div class="hebepopu_card_stars">
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_off"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="popular_main_card hebepopu_card">
+                        <a href="#">
+                            <div class="popular_main_card_fig hebepopu_card_fig">
+                                <img class="popular_main_card_fig_img hebepopu_card_fig_img" src="ImagesBooki/hebergements/Photo/bleublanc.jpg" alt="Chambre classique, lit confort." />
+                                <div class="popular_main_card_fig_caption hebepopu_card_fig_caption">
+                                    <div class="popular_main_card_fig_caption_desc">
+                                        <h3 class="popular_main_card_fig_caption_title hebepopu_card_fig_caption_title">Hôtel Bleu et Blanc</h3>
+                                        <p class="popular_main_card_from hebepopu_card_from">Nuit à partir de  <span class="popular_main_card_from_price">71€</span></p>
+                                    </div>
+                                    <div class="hebepopu_card_stars">
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_on"></i>
+                                        <i class="fa-solid fa-star star_off"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </aside>
+        </section>
+        <!--Activités-->
+        <section id="activites">
+            <h2 id="titre_activites">Activités à Marseille</h2>
+            <!--Activités à Marseille-->
+            <div class="activites_cards">
+                <a href="#" class="activites_card activites_card_large">
+                    <div class="activites_card_fig">
+                        <img class="activites_card_fig_img activites_card_fig_img_large" src="ImagesBooki/activites/Photo/vieuxport.jpg" alt="Le Vieux Port de Marseille." />
+                        <div class="activites_card_fig_caption">
+                            <h4 class="activites_card_fig_caption_title">Vieux Port</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="activites_card activites_card_large">
+                    <div class="activites_card_fig">
+                        <img class="activites_card_fig_img activites_card_fig_img_large" src="ImagesBooki/activites/Photo/fort.jpg" alt="Fort de Pomuèges" />
+                        <div class="activites_card_fig_caption">
+                            <h4 class="activites_card_fig_caption_title">Fort de Pomègues</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="activites_card activites_card_large">
+                    <div class="activites_card_fig">
+                        <img class="activites_card_fig_img activites_card_fig_img_large" src="ImagesBooki/activites/Photo/parc.jpg" alt="Parc National des Calanques" />
+                        <div class="activites_card_fig_caption">
+                            <h4 class="activites_card_fig_caption_title">Parc National des Calanques</h4>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="activites_card activites_card_large">
+                    <div class="activites_card_fig">
+                        <img class="activites_card_fig_img activites_card_fig_img_large" src="ImagesBooki/activites/Photo/notredame.jpg" alt="Notre-Dame-de-la-Garde" />
+                        <div class="activites_card_fig_caption">
+                            <h4 class="activites_card_fig_caption_title">Notre-Dame-de-la-Garde</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <!--A propos-->
+            <div id="apropos">
+                <h3>À propos</h3>
+                <ul class="list">
+                    <li href="#">Fonctionnement du site</li>
+                    <li href="#">Conditions générales de vente</li>
+                    <li href="#">Données et confidentialité</li>
+                </ul>
+            </div>
+            <!--Nos Hébergements-->
+            <div id="noshebergements">
+                <h3>Nos hébergements</h3>
+                <ul class="list">
+                    <li href="#">Charte qualité</li>
+                    <li href="#">Soumettre votre hôtel</li>
+                </ul>
+            </div>
+            <!--Assistance-->
+            <div id="assistance">
+                <h3>Assistance</h3>
+                <ul class="list">
+                    <li href="#">Centre d'aide</li>
+                    <li href="#">Nous contacter</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
